@@ -1,0 +1,533 @@
+/* CONTACTS PAGE */
+.contacts_nav {
+    flex-direction: column;
+}
+.contacts_nav .navbar-collapse {
+    flex-direction: column;
+}
+.contacts_page__logo {
+    /* color: #585451; */
+    font-size: 1.5rem;
+    border: 2px solid #725C4E;
+    padding: 10px 20px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 20px;
+}
+.contacts_page__logo h1 {
+    font-size: 1.5rem;
+    border-radius: 50%;
+    color: #725C4E;
+}
+.contacts_page__logo_first {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+    margin-top: 0.5rem;
+    position: relative
+}
+.contacts_page__logo_first::before {
+    content: '';
+
+}
+.contacts_page__logo__svg {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    fill: #725C4E;
+    transform: translateX(-50%);
+    background: #F8F9FA;
+}
+
+.contacts_nav_element_link {
+    font-weight: 700;
+    font-size: 20px;
+    color: #585451;
+}
+.navbar-light .navbar-nav .active>.nav-link {
+    color: #585451;
+    font-size: 20px;
+}
+
+/* contacts-info-section */
+.contacts-info-section {
+    /* background-image: url(../images/header-bg2.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+/* .contacts-info-section::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.74);
+} */
+.contacts-info__block {
+    /* background: #717E65; */
+    border: 1px solid #999;
+    padding: 50px 30px;
+}
+.contacts-info__block:nth-child(1),
+.contacts-info__block:nth-child(4) {
+    background: #717E65;
+}
+.contacts-info__block:nth-child(2),
+.contacts-info__block:nth-child(3) {
+    background: #725C4E;
+}
+.contacts-info-section__row {
+    justify-content: center;
+}
+.contacts-info__mini_block {
+    position: absolute;
+    left: calc(50% - 130px / 2);
+    top: 147px;
+    transform: rotate(45deg);
+    z-index: 1;
+    background: #999;
+    width: 130px;
+    height: 130px;
+}
+.contacts-info__mini_block-text {
+    transform: rotate(-45deg);
+}
+.contacts-info__block_svg-tel {
+    width: 15px;
+    height: 15px;
+}
+.contacts-info__block_svg-tel,
+.contacts-info__block_svg-email {
+    width: 15px;
+    height: 15px;
+}
+.contacts-info__mini_block-email {
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+.contacts-info__block-tel {
+    font-size: 16px;
+    font-weight: 500;
+}
+.contacts-info__mini_block-rf {
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    left: -7px;
+    top: 33px;
+    text-transform: uppercase;
+}
+.contacts-info__block-street {
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+}
+/* .contacts-info__block-street::before {
+    content: '';
+    width: 20%;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+} */
+.contacts-info__block_svg-street {
+    width: 25px;
+    height: 25px;
+}
+/* contacts-info-section end */
+/* CONTACTS PNG END */
+
+
+/*HOMEPAGE*/
+.menu {
+    background-image: url("../images/bg/4-fon-dlya-sayta.png");
+    padding: 100px 0;
+    position: relative;
+}
+.menu-container {
+    box-shadow: 0 0 15px 0px #000;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.menu-element-title {
+    color: #B42330;
+    text-shadow: 0 0 15px #000;
+    margin-bottom: 30px;
+    display: block;
+    font-style: italic;
+    transition: .5s;
+}
+.menu-element-title:hover {
+    text-shadow: 5px 5px 3px #000;
+    text-decoration: none;
+}
+.menu-element-title:hover {
+    color: #BA2432;
+}
+.menu-element {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    margin-bottom: 130px;
+    align-items: baseline;
+    justify-content: center;
+    position: relative;
+}
+.menu-elem-img {
+    width: 230px;
+    height: 230px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 1px #000, 0 0 1px 5px #171717, 0 0 1px 6px rgb(126, 126, 126), 0 0 1px 5px #fff;
+}
+.menu-elem-1-img img,
+.menu-elem-2-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu-elem-price {
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    height: 80px;
+    width: 180px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #171717;
+    background-image: url("../images/bg/115-fon-dlya-sayta.png");
+    box-shadow: 0 0 10px 5px #0c0b0b;
+}
+.menu-elem-share {
+    fill: #777;
+}
+.menu-elem-share-right {
+    transform: rotate(40deg);
+    margin-bottom: 50px;
+    position: relative;
+    bottom: 30px;
+    right: -10px;
+}
+.menu-elem-share-left {
+    transform: rotate(-130deg);
+    position: relative;
+    bottom: -95px;
+}
+
+.menu-elem-1-ingredient-1 {
+    right: 190px;
+    bottom: -8px;
+    transform: rotate(11deg);
+}
+.menu-elem-1-ingredient-2 {
+    bottom: -47px;
+    right: 150px;
+    transform: rotate(9deg);
+}
+.menu-elem-1-ingredient-3 {
+    bottom: -70px;
+    right: 210px;
+    transform: rotate(12deg);
+}
+
+.menu-elem-2-ingredient-1 {
+    top: -15px;
+    left: 140px;
+    transform: rotate(10deg);
+}
+.menu-elem-2-ingredient-2 {
+    top: 16px;
+    left: 130px;
+    transform: rotate(3deg);
+}
+.menu-elem-2-ingredient-3 {
+    left: 130px;
+    top: 50px;
+    transform: rotate(-7deg);
+}
+
+.menu-elem-5-ingredient-1 {
+    right: 190px;
+    bottom: -15px;
+    transform: rotate(-10deg);
+}
+.menu-elem-5-ingredient-2 {
+    bottom: -41px;
+    right: 130px;
+}
+.menu-elem-5-ingredient-3 {
+    bottom: -70px;
+    right: 163px;
+    transform: rotate(12deg);
+}
+
+.menu-element-6-ingredient-1 {
+    left: 46px;
+    top: -69px;
+    transform: rotate(20deg);
+}
+.menu-element-6-ingredient-2 {
+    left: 25px;
+    transform: rotate(6deg);
+}
+
+.menu-elem-8-ingredient-1 {
+    top: -15px;
+    left: 30px;
+    transform: rotate(10deg);
+}
+.menu-elem-8-ingredient-2 {
+    left: 50px;
+    top: 30px;
+    transform: rotate(10deg);
+}
+
+.menu-elem-9-ingredient-1 {
+    top: 0;
+    right: 25px;
+    transform: rotate(-7deg);
+}
+.menu-elem-9-ingredient-2 {
+    bottom: 0;
+    right: 85px;
+    transform: rotate(5deg);
+}
+.menu-elem-9-ingredient-3 {
+    bottom: -39px;
+    right: 196px;
+    transform: rotate(5deg);
+}
+
+.menu-elem-11-ingredient-1 {
+    top: -24px;
+    right: 115px;
+    transform: rotate(-11deg);
+}
+.menu-elem-11-ingredient-2 {
+    top: 0;
+    right: 0;
+    transform: rotate(-10deg);
+}
+.menu-elem-11-ingredient-3 {
+    top: 40px;
+    right: 0;
+}
+
+.soc-icons {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /*-ms-flex-align: flex-end;*/
+    align-items: flex-end;
+    -ms-flex-pack: justify;
+    justify-content: center;
+}
+.soc-icons .list-inline-item {
+    margin-right: 1rem;
+}
+.bg-svg {
+    fill: #514f4f;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+
+.salt-pepper {
+    top: 0;
+    left: 520px;
+}
+.bread {
+    top: 260px;
+    left: 20px;
+}
+.onion {
+    top: 300px;
+    right: 0;
+}
+.bell-pepper {
+    width: 60px;
+    height: 60px;
+    left: 0px;
+    bottom: -80px;
+}
+.cheese {
+    width: 60px;
+    height: 60px;
+    left: 150px;
+    bottom: 0;
+}
+.salt {
+    width: 60px;
+    height: 60px;
+    top: -80px;
+    left: 0;
+    transform: rotate(8deg);
+}
+.beer {
+    width: 65px;
+    height: 65px;
+    left: 160px;
+}
+.apron {
+    bottom: -30px;
+    left: 450px;
+}
+.restaurant {
+    left: 550px;
+    transform: translateX(-50%);
+}
+.chili-pepper {
+    left: 400px;
+    top: -10px;
+}
+.garlic {
+    width: 60px;
+    bottom: -15px;
+    right: 130px;
+}
+.cucumber {
+    width: 70px;
+    bottom: -85px;
+    left: 185px;
+    transform: rotate(-119deg);
+}
+.turner {
+    bottom: -80px;
+    right: 0;
+    transform: rotate(35deg);
+}
+.lettuce {
+    right: 0;
+    top: -60px;
+    width: 70px;
+    height: 60px;
+}
+.tomato {
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    left: 130px;
+}
+.meat {
+    bottom: -87px;
+    right: 48px;
+    transform: rotate(-15deg);
+}
+.carrot {
+    top: 780px;
+    left: 250px;
+}
+.rolling {
+    bottom: -60px;
+    right: -35px;
+    transform: rotate(-90deg);
+}
+.knives {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cooking {
+    right: 10px;
+    bottom: -80px;
+    transform: rotate(-80deg);
+}
+.cooking2 {
+    width: 80px;
+    height: 80px;
+    left: 40px;
+    top: -140px;
+}
+.flour {
+    width: 60px;
+    height: 60px;
+    right: 300px;
+    bottom: -27px;
+}
+
+
+
+.drinks-title {
+    text-align: center;
+    color: #BA2432;
+    font-style: italic;
+    text-shadow: 5px 5px 3px #000;
+}
+.drinks-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.drinks-text span {
+    color: #ccc;
+    font-size: 20px;
+}
+.drinks-text-svg {
+    width: 30px;
+    height: 25px;
+    fill: #514f4f;
+}
+.drinks-dashed-linear {
+    border-bottom: 1px dashed #514f4f;
+    width: 60%;
+}
+
+
+
+
+
+
+
+/*.cola-img,*/
+/*.sprite-img,*/
+/*.fanta-img,*/
+/*.up-img {*/
+    /*width: 200px;*/
+/*}*/
+/*.pepsi-img {*/
+    /*width: 300px;*/
+/*}*/
+
+
+
+/*.header-search-form input {*/
+    /*background-color: rgba(255, 255, 255, 0.41);*/
+    /*border: none;*/
+    /*border-top-right-radius: 0;*/
+    /*border-bottom-right-radius: 0;*/
+    /*color: #BA2432;*/
+/*}*/
+/*.header-search-form input:focus {*/
+    /*box-shadow: none;*/
+    /*border: none;*/
+    /*color: #BA2432;*/
+    /*background-color: #f4f4f4 ;*/
+/*}*/
+/*.header-search-form button {*/
+    /*border: none;*/
+    /*background-color: #BA2432;*/
+    /*border-top-left-radius: 0;*/
+    /*border-bottom-left-radius: 0;*/
+/*}*/
+/*.header-search-form button:hover {*/
+    /*!*background-color: rgba(255, 255, 255, 0.51);*!*/
+    /*background-color: #f4f4f4;*/
+/*}*/
+/*.header-search-form button:hover svg {*/
+    /*fill: #BA2432;*/
+/*}*/
+/*.header-search-form button:focus {*/
+    /*box-shadow: none;*/
+/*}*/
+/*.header-search-form button svg {*/
+    /*width: 20px;*/
+    /*height: 23px;*/
+    /*fill: #f4f4f4;*/
+/*}*/

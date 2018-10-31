@@ -1,0 +1,1330 @@
+.white {color: #fff;}
+.red {color: #BA2432;}
+.gray {color: #605d5d;}
+.border-bottom {border-bottom: 1px solid #fff;}
+.text-style {
+    font-style: italic;
+    font-weight: 500;
+    text-align: justify;
+}
+.img-style {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    height: 50vh;
+    min-height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.header::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.33);
+}
+.header-video {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.header-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.header-text {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    font-style: italic;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 135px;
+}
+.gray-serch-input {
+    background-color: #f2f2f2;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.logo.navbar-brand {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    padding: 0;
+}
+.logo.navbar-brand img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .active>.nav-link{
+    color: #f4f4f4;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+.contacts_nav {
+    flex-direction: column;
+}
+.contacts_nav .navbar-collapse {
+    flex-direction: column;
+}
+.contacts_nav_element {
+    margin: 0 10px;
+}
+.contacts_nav_element_link{
+    padding-top: .1rem;
+    padding-bottom: .3rem;
+    font-weight: 500;
+    font-size: 20px;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #BA2432!important;
+    background: rgba(255, 255, 255, 0.31);
+    border-radius: 2px;
+    transition: .2s;
+}
+.contacts_nav_element:hover::before,
+.contacts_nav_element:hover::after {
+    width: 100%;
+}
+.fb-icon a svg,
+.vk-icon a svg,
+.in-icon a svg {
+    width: 30px;
+    height: 30px;
+    fill: #f4f4f4;
+    transition: .8s;
+}
+.fb-icon a svg:hover,
+.vk-icon a svg:hover,
+.in-icon a svg:hover {
+    transform: rotateY(360deg);
+    fill: #ba2432;
+}
+/* HEADER end */
+
+/*HOME PAGE*/
+.site-description {
+    font-size: 17px;
+    font-weight: bold;
+    font-style: italic;
+    color: #605d5d;
+}
+.site-description-section {
+    position: relative;
+}
+.site-description-section .barbecue-icon {
+    top: 0;
+}
+
+/*menu section*/
+.chef-hat {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: -53px;
+    transform: translateX(-50%);
+}
+.chef-hat img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu {
+    background-image: url("../images/bg/4-fon-dlya-sayta.png");
+    padding: 100px 0;
+    position: relative;
+}
+.menu-container {
+    box-shadow: 0 0 15px 0 #000;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.menu-title {
+    color: #ccc;
+    font-style: italic;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 70px;
+    text-shadow: 5px 5px 3px #000;
+}
+.menu-title h2 {
+    font-size: 40px;
+    color: #BA2432;
+}
+.menu-title-svg {
+    width: 70px;
+    fill: #777;
+}
+.ingredient {
+    color: #777;
+    text-align: justify;
+    font-style: italic;
+    position: absolute;
+    font-size: 18px;
+}
+.menu-element-title {
+    color: #B42330;
+    text-shadow: 0 0 15px #000;
+    margin-bottom: 30px;
+    display: block;
+    font-style: italic;
+    transition: .5s;
+}
+.menu-element-title:hover {
+    text-shadow: 5px 5px 3px #000;
+    text-decoration: none;
+}
+.menu-element-title:hover {
+    color: #BA2432;
+}
+.menu-element {
+    display: flex;
+    margin-bottom: 130px;
+    align-items: baseline;
+    justify-content: center;
+    position: relative;
+}
+.menu-elem-img {
+    width: 230px;
+    height: 230px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 1px #000, 0 0 1px 5px #171717, 0 0 1px 6px rgb(126, 126, 126), 0 0 1px 5px #fff;
+}
+.menu-elem-1-img img,
+.menu-elem-2-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu-elem-price {
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    height: 80px;
+    width: 180px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #171717;
+    background-image: url("../images/bg/115-fon-dlya-sayta.png");
+    box-shadow: 0 0 10px 5px #0c0b0b;
+}
+.menu-elem-share {
+    fill: #777;
+}
+.menu-elem-share-right {
+    transform: rotate(40deg);
+    margin-bottom: 50px;
+    position: relative;
+    bottom: 30px;
+    right: -10px;
+}
+.menu-elem-share-left {
+    transform: rotate(-130deg);
+    position: relative;
+    bottom: -95px;
+}
+
+.menu-elem-1-ingredient-1 {
+    right: 190px;
+    bottom: -8px;
+    transform: rotate(11deg);
+}
+.menu-elem-1-ingredient-2 {
+    bottom: -47px;
+    right: 150px;
+    transform: rotate(9deg);
+}
+.menu-elem-1-ingredient-3 {
+    bottom: -70px;
+    right: 210px;
+    transform: rotate(12deg);
+}
+
+.menu-elem-2-ingredient-1 {
+    top: -15px;
+    left: 140px;
+    transform: rotate(10deg);
+}
+.menu-elem-2-ingredient-2 {
+    top: 16px;
+    left: 130px;
+    transform: rotate(3deg);
+}
+.menu-elem-2-ingredient-3 {
+    left: 130px;
+    top: 50px;
+    transform: rotate(-7deg);
+}
+
+.menu-elem-5-ingredient-1 {
+    right: 190px;
+    bottom: -15px;
+    transform: rotate(-10deg);
+}
+.menu-elem-5-ingredient-2 {
+    bottom: -41px;
+    right: 130px;
+}
+.menu-elem-5-ingredient-3 {
+    bottom: -70px;
+    right: 163px;
+    transform: rotate(12deg);
+}
+
+.menu-element-6-ingredient-1 {
+    left: 46px;
+    top: -69px;
+    transform: rotate(20deg);
+}
+.menu-element-6-ingredient-2 {
+    left: 25px;
+    transform: rotate(6deg);
+}
+
+.menu-elem-8-ingredient-1 {
+    top: -15px;
+    left: 30px;
+    transform: rotate(10deg);
+}
+.menu-elem-8-ingredient-2 {
+    left: 50px;
+    top: 30px;
+    transform: rotate(10deg);
+}
+
+.menu-elem-9-ingredient-1 {
+    top: 0;
+    right: 25px;
+    transform: rotate(-7deg);
+}
+.menu-elem-9-ingredient-2 {
+    bottom: 0;
+    right: 85px;
+    transform: rotate(5deg);
+}
+.menu-elem-9-ingredient-3 {
+    bottom: -39px;
+    right: 196px;
+    transform: rotate(5deg);
+}
+
+.menu-elem-11-ingredient-1 {
+    top: -24px;
+    right: 115px;
+    transform: rotate(-11deg);
+}
+.menu-elem-11-ingredient-2 {
+    top: 0;
+    right: 0;
+    transform: rotate(-10deg);
+}
+.menu-elem-11-ingredient-3 {
+    top: 40px;
+    right: 0;
+}
+
+.soc-icons {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    -ms-flex-pack: justify;
+    justify-content: center;
+}
+.soc-icons .list-inline-item {
+    margin-right: 1rem;
+}
+.bg-svg {
+    fill: #514f4f;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+
+.salt-pepper {
+    top: 0;
+    left: 520px;
+}
+.bread {
+    top: 260px;
+    left: 20px;
+}
+.onion {
+    top: 300px;
+    right: 0;
+}
+.bell-pepper {
+    width: 60px;
+    height: 60px;
+    left: 0;
+    bottom: -80px;
+}
+.cheese {
+    width: 60px;
+    height: 60px;
+    left: 150px;
+    bottom: 0;
+}
+.salt {
+    width: 60px;
+    height: 60px;
+    top: -80px;
+    left: 0;
+    transform: rotate(8deg);
+}
+.beer {
+    width: 65px;
+    height: 65px;
+    left: 160px;
+}
+.apron {
+    bottom: -30px;
+    left: 450px;
+}
+.restaurant {
+    left: 550px;
+    transform: translateX(-50%);
+}
+.chili-pepper {
+    left: 400px;
+    top: -10px;
+}
+.garlic {
+    width: 60px;
+    bottom: -15px;
+    right: 130px;
+}
+.cucumber {
+    width: 70px;
+    bottom: -85px;
+    left: 185px;
+    transform: rotate(-119deg);
+}
+.turner {
+    bottom: -80px;
+    right: 0;
+    transform: rotate(35deg);
+}
+.lettuce {
+    right: 0;
+    top: -60px;
+    width: 70px;
+    height: 60px;
+}
+.tomato {
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    left: 130px;
+}
+.meat {
+    bottom: -87px;
+    right: 48px;
+    transform: rotate(-15deg);
+}
+.carrot {
+    top: 780px;
+    left: 250px;
+}
+.rolling {
+    bottom: -60px;
+    right: -35px;
+    transform: rotate(-90deg);
+}
+.knives {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cooking {
+    right: 10px;
+    bottom: -80px;
+    transform: rotate(-80deg);
+}
+.cooking2 {
+    width: 80px;
+    height: 80px;
+    left: 40px;
+    top: -140px;
+}
+.flour {
+    width: 60px;
+    height: 60px;
+    right: 300px;
+    bottom: -27px;
+}
+
+.drinks-title {
+    text-align: center;
+    color: #BA2432;
+    font-style: italic;
+    text-shadow: 5px 5px 3px #000;
+}
+.drinks-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.drinks-text span {
+    color: #ccc;
+    font-size: 20px;
+}
+.drinks-text-svg {
+    width: 30px;
+    height: 25px;
+    fill: #514f4f;
+}
+.drinks-dashed-linear {
+    border-bottom: 1px dashed #514f4f;
+    width: 60%;
+}
+/*menu section end*/
+/*HOME PAGE END*/
+
+/* CONTACTS PAGE */
+/* contacts-form-section */
+.cursor {
+    cursor: url("../images/icons/cursor.png"), auto;
+}
+.contacts-form-section {
+    background-image: url("../images/bg/4-fon-dlya-sayta.png");
+    position: relative;
+}
+.contacts-form {
+    padding: 0 35px 50px 35px;
+    box-shadow: 0 0 10px #0c0c0c;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    background-image: url("../images/bg/4-fon-dlya-sayta.png");
+}
+.contacts-form-input {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #f7f7f7;
+    letter-spacing: 1px;
+    font-style: italic;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: none;
+    border-bottom: 1px solid #BA2432;
+    border-radius: 0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    resize: none;
+}
+.contacts-form-input:focus,
+.contacts-form-input:active {
+    border-bottom: 1px solid #BA2432;
+    background: transparent;
+    box-shadow: none;
+    color: #f7f7f7;
+}
+.form-control::-webkit-input-placeholder {
+    color: #777;
+    font-size: 13px;
+    font-style: italic;
+}
+.form-control::-moz-placeholder {
+    color: #777;
+    font-size: 13px;
+}
+.form-control:-ms-input-placeholder {
+    color: #777;
+    font-size: 13px;
+}
+.form-control::placeholder {
+    color: #777;
+    font-size: 13px;
+}
+.contacts-form-svg {
+    width: 60px;
+    height: 60px;
+    fill: #BA2432;
+    position: relative;
+    left: 86%;
+    top: -70px;
+    border-radius: 5px;
+    padding: 10px;
+    background-image: url("../images/bg/4-fon-dlya-sayta.png");
+    box-shadow: 0 -3px 10px #000;
+}
+.contacts-form-button {
+    background: #BA2432;
+    color: #1f1f1f;
+    width: 100%;
+    font-weight: 600;
+    font-size: 17px;
+    transition: .7s;
+    border: 2px solid #BA2432;
+    box-shadow: 4px 10px 30px #000;
+}
+.contacts-form-button:hover {
+    box-shadow: none;
+}
+.contacts-form-button:focus {
+    box-shadow: none;
+}
+/* contacts-form-section-end */
+/*map*/
+.map {
+    width: 100%;
+    height: 350px;
+    box-shadow: 0 0 10px #999;
+}
+.address-img {
+    height: 350px;
+    width: 100%;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    position: relative;
+}
+.address-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.address-img::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.31);
+}
+.address-section {
+    background-image: url("../images/bg/115-fon-dlya-sayta.png");
+}
+.address-email-row {
+    border-bottom: 1px solid #BA2432;
+    padding: 10px;
+}
+.contacts-info-block {
+    position: relative;
+}
+.contacts-info-block::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 8px solid #BA2432;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contacts-info-block div:nth-child(1) {
+    padding-top: 20px;
+}
+.contacts-info-block span {
+    font-weight: 600;
+}
+.contacts-info {
+    width: 22px;
+    fill: #BA2432;
+    margin: 5px;
+    /*margin-right: 15px;*/
+    z-index: 1;
+}
+.contacts-info-tel-svg {
+    width: 15px;
+}
+.contacts-info-email-svg {
+    width: 20px;
+    height: 20px;
+}
+.city, .email {
+    font-weight: 600;
+    text-align: center;
+}
+.city svg {
+    width: 25px;
+    fill: #BA2432;
+}
+.email svg {
+    fill: #BA2432;
+}
+/* CONTACTS PAGE END */
+
+/*ABOUT US PAGE*/
+.about-section {
+    position: relative;
+}
+.about-title {
+    text-align: center;
+    font-style: italic;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    color: #939090;
+    text-shadow: 5px 5px 3px #000;
+}
+.about-title .barbecue-icon {
+    bottom: -40px;
+}
+.about-section-list {
+    text-align: center;
+    margin-bottom: 150px!important;
+}
+.about-section-list-icon {
+    top: 20px;
+}
+.list-group-item {
+    background: transparent;
+    border: none;
+    /*border-bottom: 1px dashed rgba(0,0,0,.125);*/
+    border-bottom: 1px dashed #605d5d;
+    font-style: italic;
+    font-weight: 500;
+    color: #939090!important;
+}
+.about-title-svg {
+    width: 30px;
+    fill: #BA2432;
+    margin: auto;
+    display: block;
+    position: relative;
+    top: -15px;
+}
+.about-text {
+    color: #939090;
+}
+.about-svg {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 20px;
+    shape-outside: circle();
+    fill: #BA2432;
+}
+.about-first-svg {
+    float: left;
+}
+.about-second-svg {
+    float: right;
+}
+.about-section-bg-1,
+.about-section-bg-2,
+.about-section-bg-3,
+.about-section-bg-4,
+.about-section-bg-5 {
+    width: 250px;
+    overflow: hidden;
+    position: absolute;
+}
+.about-section-bg-1 img,
+.about-section-bg-2 img,
+.about-section-bg-3 img,
+.about-section-bg-4 img,
+.about-section-bg-5 img {
+    width: 100%;
+    object-fit: cover;
+}
+.about-section-bg-1 {
+    right: 30px;
+    top: 100px;
+    width: 100px;
+    transform: rotate(-10deg);
+}
+.about-section-bg-2 {
+    left: 20px;
+    top: 100px;
+    width: 140px;
+}
+.about-section-bg-3 {
+    right: 400px;
+    top: 400px;
+    width: 150px;
+}
+.about-section-bg-4 {
+    width: 70px;
+    top: 450px;
+    left: 70px;
+    transform: rotate(115deg);
+}
+.about-section-bg-5 {
+    right: 50px;
+    top: 550px;
+    width: 160px;
+}
+.barbecue-icon {
+    width: 110px;
+    height: 4px;
+    background: #373538;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 110px / 2);
+    margin-bottom: 30px;
+}
+.barbecue-icon::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 2px solid #373538;
+    /* border-left: 2px solid #373538; */
+    /* border-top: 2px solid #373538; */
+    /* border-right: 2px solid #373538; */
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    right: -10px;
+}
+.barbecue-icon::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-right: 5px solid #373538;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+    position: absolute;
+    left: -5px;
+    top: -1px;
+}
+.barbecue-icon-element-1,
+.barbecue-icon-element-2,
+.barbecue-icon-element-3,
+.barbecue-icon-element-4 {
+    width: 25px;
+    height: 20px;
+    background: brown;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    transform: rotateX(-45deg);
+    z-index: 0;
+}
+.barbecue-icon-element-1 {
+    left: 10px;
+}
+.barbecue-icon-element-2 {
+    left: 30px;
+}
+.barbecue-icon-element-3 {
+    left: 50px;
+}
+.barbecue-icon-element-4 {
+    left: 70px;
+}
+/*personal block*/
+.container-bg {
+    background-image: url("../images/bg/4-fon-dlya-sayta.png");
+    box-shadow: inset 0px 0px 10px 5px #060606;
+}
+.our-personal {
+    background-image: url("../images/bg/115-fon-dlya-sayta.png");
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.worker-info {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: #BA2432;
+    padding: 5px;
+}
+.worker-info h5 {
+    margin-bottom: .2rem;
+    color: #ddd;
+    font-style: italic;
+}
+.worker-info p {
+    margin-bottom: .2rem;
+    font-weight: 500;
+    color: #ddd;
+    font-style: italic;
+    font-size: 16px;
+}
+.personal-title {
+    position: relative;
+    border-bottom: 2px solid #BA2432;
+}
+.personal-title::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid #BA2432;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    position: absolute;
+    left: 50%;
+    top: 47px;
+    transform: translateX(-50%);
+}
+.person-img {
+    height: 300px;
+}
+.person-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.chef-block {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.chef-block-row {
+    box-shadow: 0 0 10px #000;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.chef-infobox {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    z-index: 1;
+    top: calc(50% - 250px / 2);
+    left: 50%;
+    transform: translate(-50%);
+    perspective: 500px;
+}
+.chef-card {
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #fff, 0 0 10px 7px #000;
+    width: 250px;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: .5s ease;
+    position: relative;
+}
+.chef-card-front, .chef-card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    backface-visibility: hidden;
+}
+.chef-infobox:hover .chef-card {
+    transform: rotateY(180deg);
+}
+.chef-card-back {
+    transform: rotateY(180deg);
+}
+.chef-img {
+    overflow: hidden;
+    border-radius: 50%;
+}
+.chef-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.chef-name-block {
+    overflow: hidden;
+    border-radius: 50%;
+    background-image: url("../images/bg/4-fon-dlya-sayta.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.chef-name-block p {
+    color: #ccc;
+}
+.chef-restorant-image {
+    width: 100%;
+    height: 300px;
+}
+/*personal block*/
+.swiper-container-address {
+    color: #605d5d;
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+}
+.swiper-container-address span {
+    border-bottom: 2px solid #605d5d;
+}
+.swiper-slide {
+    width: 100%!important;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-button-prev svg,
+.swiper-button-next svg {
+    fill: #fff;
+    width: 25px;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev,
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    background-image: none;
+    position: absolute;
+    bottom: 3px;
+    top: auto;
+}
+/*personal block end*/
+/*ABOUT US PAGE END*/
+
+/*ABOUT PRODUCT PAGE*/
+.about-product-img {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    box-shadow: 0 0 0 10px #BA2432;
+    border-radius: 1px;
+}
+.about-product-img img {
+    box-shadow: 0 0 10px #171717;
+}
+.about-product-price {
+    border-bottom: 1px solid #BA2432;
+    background: #BA2432;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+.about-product-price span {
+    font-weight: 700;
+    font-size: 22px;
+}
+.about-product-price,
+.about-product-text {
+    text-align: center;
+}
+.about-product-price span:nth-child(2n),
+.about-product-text {
+    font-size: 20px;
+    color: #BA2432;
+}
+.about-product-chef-hat {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    top: -35px;
+    transform: translateX(-50%);
+    fill: #BA2432;
+}
+.about-product-plate {
+    width: 50px;
+    height: 50px;
+    margin-left: calc(50% - 50px / 2);
+    transform: rotate(-45deg);
+}
+/*ABOUT PRODUCT PAGE END*/
+
+/*FOOTER*/
+.footer {
+    background-image: url("../images/bg/4-fon-dlya-sayta.png");
+    /*background-color: #f4f4f4;*/
+    position: relative;
+    padding: 15px;
+}
+.footer-logo {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    position: absolute;
+    top: -45px;
+    left: calc(50% - 80px / 2);
+}
+.copyright {
+    text-align: center;
+    color: #BA2432;
+    font-style: italic;
+}
+
+/*FOOTER END*/
+
+
+/*MEDIA*/
+@media only screen and (max-width: 1300px) {
+    .salt-pepper {
+        top: -40px;
+        left: 440px;
+    }
+    .bell-pepper {
+        left: 50px;
+        bottom: -135px;
+    }
+    .onion {
+         right: 60px;
+    }
+    .restaurant {
+        top: -25px;
+        left: 460px;
+    }
+    .tomato {
+        bottom: -46px;
+        left: 90px;
+    }
+    .cheese {
+        left: 90px;
+        bottom: -75px;
+    }
+    .rolling {
+        bottom: -125px;
+    }
+    .cooking2 {
+        top: -190px;
+    }
+}
+@media only screen and (max-width: 1199px) {
+    .menu-elem-img {
+        width: 230px;
+        height: 220px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .header-text {
+        font-size: 20px;
+        top: 120px;
+        left: -15px;
+    }
+    .address-email-row::after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-top: 10px solid #BA2432;
+        border-right: 50px solid transparent;
+        border-left: 50px solid transparent;
+        position: absolute;
+        left: 50%;
+        top: 86px;
+        transform: translateX(-50%);
+    }
+    .contacts-info-block::before {
+        display: none;
+    }
+    .contacts-info-block {
+        border-bottom: 1px dashed #BA2432;
+    }
+    .address-img {
+        height: 300px;
+    }
+    .about-section-bg-1 {
+        top: 65px;
+        width: 80px;
+    }
+    .about-section-bg-2 {
+        top: 60px;
+        width: 100px;
+    }
+    .about-section-bg-3 {
+        right: 300px;
+        width: 100px;
+    }
+    .about-section-bg-4 {
+        width: 65px;
+        top: 359px;
+    }
+    .about-section-bg-5 {
+        top: 480px;
+        width: 140px;
+    }
+    .address-section {
+        padding-bottom: 15px;
+    }
+
+    .cooking {
+        right: 100px;
+    }
+    .chili-pepper {
+        left: 430px;
+        top: -30px;
+    }
+    .turner {
+        bottom: -115px;
+        right: 65px;
+        transform: rotate(50deg);
+    }
+    .rolling {
+        right: 260px;
+    }
+    .flour {
+        right: 45px;
+        bottom: -40px;
+    }
+    .salt {
+        left: 60px;
+    }
+    .restaurant {
+        left: 355px;
+        top: auto;
+        bottom: -100px;
+    }
+    .apron {
+        bottom: -80px;
+        left: 370px;
+    }
+    .cucumber {
+        left: 115px;
+        transform: rotate(-70deg);
+    }
+    .garlic {
+        bottom: -50px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .salt-pepper {
+        left: 400px;
+    }
+    .apron {
+        left: 250px;
+    }
+    .salt {
+        top: -165px;
+    }
+    .restaurant {
+        left: 200px;
+        top: auto;
+        bottom: -140px;
+    }
+    .chili-pepper {
+        left: 480px;
+    }
+    .flour {
+        bottom: -70px;
+    }
+    .chef-restorant-image {
+        height: 250px;
+    }
+}
+@media only screen and (max-width: 720px){
+    .about-section-bg-1,
+    .about-section-bg-2,
+    .about-section-bg-3,
+    .about-section-bg-4,
+    .about-section-bg-5 {
+        display: none;
+    }
+    .about-section-list {
+        margin-bottom: 100px!important;
+        width: 90%!important;
+    }
+}
+@media only screen and (max-width: 680px) {
+    .header-text {
+        display: none;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .logo.navbar-brand {
+        width: 80px;
+        height: 80px;
+    }
+    .contacts_nav_element_link {
+        padding-right: 10px!important;
+        padding-left: 10px!important;
+    }
+    .contacts-info-block {
+        padding-left: 25%;
+        border-bottom: none;
+    }
+    .contacts-info-block-col {
+        border-bottom: 1px dashed #BA2432;
+    }
+    .list-group-item {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .list-group-item span {
+        padding-left: 0!important;
+    }
+    .menu-elem-img {
+        width: 200px;
+        height: 200px;
+    }
+    .menu-elem-price {
+        font-size: 16px;
+        height: 70px;
+        width: 130px;
+    }
+    .logo.navbar-brand {
+        margin-top: 0!important;
+        margin-bottom: 2rem!important;
+    }
+    .contacts_nav .navbar-collapse {
+        text-align: center;
+    }
+    .soc-icons {
+        position: absolute!important;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .drinks-dashed-linear {
+        width: 50%;
+    }
+    .ingredient,
+    .bg-svg {
+        display: none;
+    }
+    .about-svg {
+        display: none;
+    }
+    .about-text {
+        text-align: center;
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .contacts-info-block {
+        padding-left: 15%;
+    }
+    .contacts-form-svg {
+        width: 50px;
+        height: 50px;
+    }
+    .menu-elem-img {
+        width: 180px;
+        height: 170px;
+    }
+    .drinks-text-svg {
+        display: none;
+    }
+    .drinks-dashed-linear {
+        width: 45%;
+    }
+    .menu-element {
+        margin-bottom: 80px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .menu-elem-img {
+        height: 140px;
+    }
+    .menu-element-title h3 {
+        font-size: 1.5rem;
+    }
+}
+
+
