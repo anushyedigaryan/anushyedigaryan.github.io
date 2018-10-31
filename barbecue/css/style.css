@@ -13,6 +13,12 @@
     object-fit: cover;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
 /* HEADER */
 .header {
     width: 100%;
@@ -665,6 +671,9 @@
     width: 25px;
     fill: #BA2432;
 }
+.email a:hover {
+    color: #BA2432;
+}
 .email svg {
     fill: #BA2432;
 }
@@ -872,7 +881,7 @@
     border-left: 50px solid transparent;
     position: absolute;
     left: 50%;
-    top: 47px;
+    bottom: -12px;
     transform: translateX(-50%);
 }
 .person-img {
@@ -889,8 +898,6 @@
 }
 .chef-block-row {
     box-shadow: 0 0 10px #000;
-    border-radius: 15px;
-    overflow: hidden;
 }
 .chef-infobox {
     width: 250px;
@@ -1294,6 +1301,8 @@
     .about-text {
         text-align: center;
         font-size: 18px;
+        padding-right: 0!important;
+        padding-left: 0!important;
     }
 }
 @media only screen and (max-width: 420px) {
