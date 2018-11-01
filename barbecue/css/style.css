@@ -160,18 +160,17 @@ body {
     box-shadow: 0 0 15px 0 #000;
     padding-top: 50px;
     padding-bottom: 50px;
+
 }
 .menu-title {
-    color: #ccc;
-    font-style: italic;
-    padding: 10px;
     text-align: center;
-    margin-bottom: 70px;
-    text-shadow: 5px 5px 3px #000;
+    margin-bottom: 30px;
 }
 .menu-title h2 {
     font-size: 40px;
     color: #BA2432;
+    font-style: italic;
+    text-shadow: 5px 5px 3px #000;
 }
 .menu-title-svg {
     width: 70px;
@@ -200,10 +199,18 @@ body {
     color: #BA2432;
 }
 .menu-element {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    margin-bottom: 130px;
+    -ms-flex-align: baseline;
+    -webkit-align-items: baseline;
     align-items: baseline;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
+    margin-bottom: 130px;
     position: relative;
 }
 .menu-elem-img {
@@ -349,11 +356,19 @@ body {
 }
 
 .soc-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    -webkit-align-items: flex-end;
     align-items: flex-end;
-    -ms-flex-pack: justify;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
 }
 .soc-icons .list-inline-item {
@@ -457,7 +472,7 @@ body {
     transform: rotate(-90deg);
 }
 .knives {
-    bottom: 0;
+    bottom: 90px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -486,8 +501,17 @@ body {
     text-shadow: 5px 5px 3px #000;
 }
 .drinks-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
 }
 .drinks-text span {
@@ -945,9 +969,18 @@ body {
     overflow: hidden;
     border-radius: 50%;
     background-image: url("../images/bg/4-fon-dlya-sayta.png");
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
 }
 .chef-name-block p {
@@ -1266,6 +1299,9 @@ body {
     .list-group-item span {
         padding-left: 0!important;
     }
+    .menu {
+        padding: 100px 0 50px 0;
+    }
     .menu-elem-img {
         width: 200px;
         height: 200px;
@@ -1324,7 +1360,16 @@ body {
         width: 45%;
     }
     .menu-element {
-        margin-bottom: 80px;
+        margin-bottom: 50px;
+    }
+    .menu-element-title {
+        margin-bottom: 30px !important;
+    }
+    .about-text {
+        font-size: 16px;
+    }
+    .about-title {
+        font-size: 30px;
     }
 }
 @media only screen and (max-width: 320px) {
@@ -1333,6 +1378,10 @@ body {
     }
     .menu-element-title h3 {
         font-size: 1.5rem;
+    }
+    .menu-elem-price {
+        /*padding: 10px;*/
+        font-size: 14px;
     }
 }
 
